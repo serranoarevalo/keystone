@@ -6,9 +6,9 @@ type Thing {
   text: String
   timestamp: DateTime
   structure: ThingStructureOutput
-  structureRelationships: ThingStructureRelationshipsOutput
   structureNested: StructureNestedOutput
   structureNested2: StructureNestedOutput
+  structureRelationships: ThingStructureRelationshipsOutput
   checkbox: Boolean
   password: PasswordState
   toOneRelationship: User
@@ -298,9 +298,9 @@ input ThingUpdateInput {
   text: String
   timestamp: DateTime
   structure: [Int]
-  structureRelationships: [ThingRelateToOneForUpdateInput]
   structureNested: [StructureNestedUpdateInput]
   structureNested2: [StructureNestedUpdateInput]
+  structureRelationships: [ThingRelateToOneForUpdateInput]
   checkbox: Boolean
   password: String
   toOneRelationship: UserRelateToOneForUpdateInput
@@ -377,9 +377,9 @@ input ThingCreateInput {
   text: String
   timestamp: DateTime
   structure: [Int]
-  structureRelationships: [ThingRelateToOneForCreateInput]
   structureNested: [StructureNestedCreateInput]
   structureNested2: [StructureNestedCreateInput]
+  structureRelationships: [ThingRelateToOneForCreateInput]
   checkbox: Boolean
   password: String
   toOneRelationship: UserRelateToOneForCreateInput
