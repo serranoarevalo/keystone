@@ -586,8 +586,8 @@ importers:
         specifier: ^2.5.0
         version: 2.5.0
       prism-react-renderer:
-        specifier: ^1.2.1
-        version: 1.2.1(react@18.2.0)
+        specifier: ^2.0.0
+        version: 2.0.0(react@18.2.0)
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -10859,6 +10859,11 @@ packages:
       q: 1.5.1
     dev: false
 
+  /clsx@1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
+    dev: false
+
   /cluster-key-slot@1.1.0:
     resolution: {integrity: sha512-2Nii8p3RwAPiFwsnZvukotvow2rIHM+yQ6ZcBXGHdniadkYGZYiGmkHJIbZPIV9nfv7m/U1IPMVVcAhoWFeklw==}
     engines: {node: '>=0.10.0'}
@@ -17098,11 +17103,12 @@ packages:
       react-is: 18.2.0
     dev: true
 
-  /prism-react-renderer@1.2.1(react@18.2.0):
-    resolution: {integrity: sha512-w23ch4f75V1Tnz8DajsYKvY5lF7H1+WvzvLUcF0paFxkTHSp42RS0H5CttdN2Q8RR3DRGZ9v5xD/h3n8C8kGmg==}
+  /prism-react-renderer@2.0.0(react@18.2.0):
+    resolution: {integrity: sha512-Pmgn/6/XaxmwSuC5InkPQ3xq7f1J/SMKdvnxAQZVE7oBH11ctIHBGc2xLWmc8g0/CG+YQwbi5JTifP01cR7kvA==}
     peerDependencies:
-      react: '>=0.14.9'
+      react: '>=16.0.0'
     dependencies:
+      clsx: 1.2.1
       react: 18.2.0
     dev: false
 
