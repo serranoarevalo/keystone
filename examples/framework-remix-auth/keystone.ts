@@ -6,7 +6,7 @@ import type { TypeInfo } from '.keystone/types';
 export default config<TypeInfo>({
   db: {
     provider: 'sqlite',
-    url: `file:${process.cwd()}/keystone.db`,
+    url: `file:./keystone.db`,
 
     // WARNING: this is only needed for our monorepo examples, dont do this
     ...fixPrismaPath,
